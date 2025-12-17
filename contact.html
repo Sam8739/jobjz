@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系方式 - 王泽榕（地产版）</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo" style="text-decoration:none;">:) HI！</a>
+    <div class="navbar">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <a href="projects.html">项目经历</a>
+      <a href="awards.html">竞赛获奖</a>
+      <a href="contact.html" class="active">联系方式</a>
+    </div>
+  </nav>
+  <main class="container">
+    <h1 class="text-center mt-4 mb-3">联系方式</h1>
+    <section class="contact-main-section">
+      <img src="../CALL ME.webp" alt="call me" class="contact-image">
+      <div class="contact-info-container">
+        <div class="card contact-card flex-between">
+          <div class="flex-row flex-center" style="gap:16px;">
+            <button class="icon-btn" aria-label="电话"><svg width="24" height="24" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3.09 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z"/></svg></button>
+            <div>
+              <div class="bold">电话</div>
+              <div class="text-secondary">18559228739</div>
+            </div>
+          </div>
+          <button class="icon-btn copy-btn" aria-label="复制" onclick="copyToClipboard('18559228739')"><svg width="20" height="20" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 20 20"><rect x="5" y="5" width="10" height="10" rx="2"/><path d="M7 3h6a2 2 0 0 1 2 2v6"/></svg></button>
+        </div>
+        <div class="card contact-card flex-between">
+          <div class="flex-row flex-center" style="gap:16px;">
+            <button class="icon-btn" aria-label="邮箱"><svg width="24" height="24" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6 12 13 2 6"/></svg></button>
+            <div>
+              <div class="bold">邮箱</div>
+              <div class="text-secondary">674432325@qq.com</div>
+            </div>
+          </div>
+          <button class="icon-btn copy-btn" aria-label="复制" onclick="copyToClipboard('674432325@qq.com')"><svg width="20" height="20" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 20 20"><rect x="5" y="5" width="10" height="10" rx="2"/><path d="M7 3h6a2 2 0 0 1 2 2v6"/></svg></button>
+        </div>
+        <div class="card contact-card flex-between">
+          <div class="flex-row flex-center" style="gap:16px;">
+            <button class="icon-btn" aria-label="微信"><svg width="24" height="24" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="10.5" r="1.5"/><circle cx="15.5" cy="10.5" r="1.5"/><path d="M12 17c-2.5 0-4.5-1.5-4.5-3.5h9c0 2-2 3.5-4.5 3.5z"/></svg></button>
+            <div>
+              <div class="bold">微信</div>
+              <div class="text-secondary">Saminthemood</div>
+            </div>
+          </div>
+          <button class="icon-btn copy-btn" aria-label="复制" onclick="copyToClipboard('Saminthemood')"><svg width="20" height="20" fill="none" stroke="#3b82f6" stroke-width="2" viewBox="0 0 20 20"><rect x="5" y="5" width="10" height="10" rx="2"/><path d="M7 3h6a2 2 0 0 1 2 2v6"/></svg></button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="toast" class="toast"></div>
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(function() {
+        showToast('已复制到剪切板');
+      });
+    }
+    
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2000);
+    }
+  </script>
+  <footer class="footer">
+    © 2025 王泽榕的个人网站.
+  </footer>
+  <script src="../image-loader.js"></script>
+</body>
+</html>
+
+

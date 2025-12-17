@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>城市热缓解导向下的绿地空间格局多目标优化模型项目 - 王泽榕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo" style="text-decoration:none;">:) HI！</a>
+    <div class="navbar">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <a href="projects.html">项目经历</a>
+      <a href="awards.html">竞赛获奖</a>
+      <a href="contact.html">联系方式</a>
+    </div>
+  </nav>
+  <main class="container">
+    <h1>热缓解导向下的绿地空间格局多目标优化模型</h1>
+    <h2>STAR 法则拆解</h2>
+    <div class="card">
+      <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
+        <thead>
+          <tr style="background-color:#f8fafc;border-bottom:2px solid #e2e8f0;">
+            <th style="padding:16px;text-align:left;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;">维度</th>
+            <th style="padding:16px;text-align:left;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;">具体内容</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color:#f8fafc;">
+            <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">S（情境）</td>
+            <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+              城市热岛效应加剧，全国超 66% 人口居住在城市，地表热岛强度年增 0.021°C，高温引发健康风险。同时，城市绿地供给有限且布局粗放，现有优化模型存在单目标局限（难以平衡降温、成本、生态连通）、高分辨率优化瓶颈（10 万 + 空间单元难以收敛）、解释性差（规划者无法理解降温机理）等问题，亟需构建科学决策模型破解 "有限用地、最大降温" 难题。
+            </td>
+          </tr>
+          <tr style="background-color:#ffffff;">
+            <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">T（任务）</td>
+            <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+              作为核心开发者，承担三大任务：<br><br>
+              1. 整合多源数据构建 "局部气候分区 - 地表温度" 数据库，支撑绿地降温机理分析；<br><br>
+              2. 设计融合机器学习的决策模型，包括启发式特征筛选、SHAP 可解释模型，识别影响降温的核心景观指标；<br><br>
+              3. 开发两步法 NSGA-II 多目标优化算法（局部 + 全局），输出平衡 "降温效益、成本控制、生态连通" 的绿地空间方案，并工具化落地。
+            </td>
+          </tr>
+          <tr style="background-color:#f8fafc;">
+            <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">A（行动）</td>
+            <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+              <strong>1. 多源数据支撑与整合：</strong><br>
+              • 收集 100m 分辨率局部气候分区（LCZ）数据（含 17 类用地类型）、1000m 逐日地表温度（LST）数据，计算地表热岛强度（SUHII），构建时空数据库，覆盖城市绿地、建筑、水体等关键要素；<br>
+              • 通过邻域一致性分析与自适应采样，筛选高质量样本（一致性得分 < 2.0），为模型训练提供可靠输入。<br><br>
+              
+              <strong>2. 机器学习与特征工程：</strong><br>
+              • 用遗传算法（GA）从 75 个景观指标中筛选 27 个核心特征（如密集林地斑块面积占比 PLAND、边缘密度 ED），降低维度灾难影响；<br>
+              • 构建随机森林（RF）预测模型，结合 SHAP 值解释降温机理（如密集林地 PLAND 突破 20% 后降温效应显著增强，稀疏林地形状指数 LSI≈2 时降温最优），使模型结果可被规划者理解。<br><br>
+              
+              <strong>3. 多目标决策模型建模：</strong><br>
+              • 开发两步法 NSGA-II 算法：局部优化（1km 网格单元）平衡 "降温效益 - 用地成本"，全局优化整合局部解集，实现 "整体降温最大化、高温热点消除、成本控制、生态廊道连通" 四目标协同；<br>
+              • 工具化落地：开发 Gradio 界面，支持数据上传、参数调整（如迭代次数、种群大小）、结果可视化（帕累托前沿、空间方案），提升模型易用性。
+            </td>
+          </tr>
+          <tr style="background-color:#ffffff;">
+            <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">R（结果）</td>
+            <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+              <strong>1. 模型性能：</strong><br>
+              特征筛选后预测精度 R² 稳定在 0.73，较全量特征提升 5%，计算效率提升 60%（10 万 + 空间单元优化耗时从理论不可行降至 52 分钟）；<br><br>
+              
+              <strong>2. 实践应用：</strong><br>
+              北京案例中生成 4 类优化方案（如综合最优方案平衡降温与成本），明确 "量先行、质加成" 规划策略（林地 PLAND 达 20%+ 提升连通性），为绿地布局提供可操作建议；<br><br>
+              
+              <strong>3. 工具价值：</strong><br>
+              Gradio 界面实现 "数据输入 - 模型运算 - 结果输出" 一站式流程，支持规划者快速调用，推动模型从理论研究向实际规划转化。
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="card">
+      <h3>核心能力体现</h3>
+      <ul>
+        <li><strong>多源数据整合能力：</strong>整合遥感、气象、规划等多源异构数据，构建高质量训练数据集；</li>
+        <li><strong>机器学习建模能力：</strong>掌握特征工程、模型选择、超参数优化等核心技术，构建高精度预测模型；</li>
+        <li><strong>可解释AI应用能力：</strong>运用SHAP等可解释性技术，使复杂模型结果可被规划者理解；</li>
+        <li><strong>多目标优化算法能力：</strong>开发NSGA-II等进化算法，解决多目标决策问题；</li>
+        <li><strong>工具化落地能力：</strong>开发用户友好的界面，推动研究成果向实际应用转化。</li>
+      </ul>
+    </div>
+    
+    <!-- 项目图片展示 -->
+    <h3>项目图片展示</h3>
+    <section class="project-gallery">
+      <div class="gallery-container">
+        <button class="gallery-btn left" onclick="moveGallery(-1, 'gallery7')">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#e6f0fa"/><path d="M15 6L9 12L15 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="gallery-track" id="gallery7">
+          <div class="gallery-item">
+            <img src="./项目7图-1.webp" alt="项目7图片1" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="gallery-item">
+            <img src="./项目7图-2.webp" alt="项目7图片2" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="gallery-item">
+            <img src="./项目7图-3.webp" alt="项目7图片3" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="gallery-item">
+            <img src="./项目7图-4.webp" alt="项目7图片4" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="gallery-item">
+            <img src="./项目7图-5.webp" alt="项目7图片5" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="gallery-item">
+            <img src="./项目7图-6.webp" alt="项目7图片6" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+        </div>
+        <button class="gallery-btn right" onclick="moveGallery(1, 'gallery7')">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#e6f0fa"/><path d="M9 6L15 12L9 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    © 2025 王泽榕的个人网站.
+  </footer>
+  
+  <script>
+    // 图片轮播功能
+    let galleryIndexes = { gallery7: 0 };
+    const galleryItemWidth = 400 + 16; // 图片宽度+间距
+    
+    function moveGallery(direction, galleryId) {
+      const track = document.getElementById(galleryId);
+      galleryIndexes[galleryId] += direction;
+      
+      const items = track.children.length;
+      if (galleryIndexes[galleryId] < 0) galleryIndexes[galleryId] = 0;
+      if (galleryIndexes[galleryId] > items - 1) galleryIndexes[galleryId] = items - 1;
+      
+      track.scrollTo({
+        left: galleryIndexes[galleryId] * galleryItemWidth,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html> 

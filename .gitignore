@@ -1,0 +1,22 @@
+# 备份文件
+*.backup
+
+# 原始PNG文件（因为已经有webp版本）
+*.png
+
+# Python脚本（如果不需要的话）
+*.py
+
+# 临时文件
+*.txt
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 部署相关
+.vercel
+.netlify 

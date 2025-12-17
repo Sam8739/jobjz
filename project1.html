@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>厦门 8 月公交运营月报数据分析与呈现 - 王泽榕</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo" style="text-decoration:none;">:) HI！</a>
+    <div class="navbar">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <a href="projects.html">项目经历</a>
+      <a href="awards.html">竞赛获奖</a>
+      <a href="contact.html">联系方式</a>
+    </div>
+  </nav>
+  <main class="container">
+    <h1>厦门 8 月公交运营月报数据分析与呈现</h1>
+    <img src="../项目1.webp" alt="项目1首图" style="width:100%;aspect-ratio:21/4.5;object-fit:cover;margin-bottom:24px;">
+    <h2>STAR 法则拆解</h2>
+    
+    <div class="card">
+      <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
+        <thead>
+          <tr style="background-color:#f8fafc;border-bottom:2px solid #e2e8f0;">
+            <th style="padding:16px;text-align:left;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;">维度</th>
+            <th style="padding:16px;text-align:left;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;">具体内容</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;width:120px;">S（情境）</td>
+            <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+              厦门市 8 月处于暑期出行高峰，叠加台风季降雨影响，公交集团需掌握当月运营全貌（客流变化、线路负荷、异常波动等），为 9 月线路资源调整（如高峰加车、支线优化）提供数据支撑。但原始数据分散在 IC 卡刷卡记录、调度日志等表格中，需通过系统化分析提炼关键信息。
+            </td>
+          </tr>
+          <tr style="background-color:#f8fafc;">
+            <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">T（任务）</td>
+            <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+              作为数据辅助人员，承担三项核心工作：<br>
+              1. 用 Excel 整理 8 月公交运营基础数据（客流总量、分线路人次、高峰时段分布等），完成数据清洗与指标计算；<br>
+              2. 制作可视化图表（柱状图、折线图、热力图等），直观呈现运营特征及异动；<br>
+              3. 编撰月报图文内容，重点标注异常数据（如某线路客流骤降）及可能原因，辅助业务部门解读。
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">A（行动）</td>
+            <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+              1. <strong>数据整理与计算</strong>：<br>
+              - 接收 IC 卡日均刷卡数据（约 100 万条）、200 条线路的日班次记录，用 Excel 数据透视表汇总 "分线路月总客流""高峰时段（7:00-9:00）客流占比" 等指标，筛选出 3 条客流超 50 万人次的干线、8 条客流不足 5 万人次的支线；<br>
+              - 计算异动指标：对比 7 月数据，发现 8 月 15 日某景区专线客流突增 300%（因台风后首个晴天），某社区支线客流下降 15%（同期地铁2号线延伸段开通）。<br><br>
+              2. <strong>可视化呈现</strong>：<br>
+              - 用 Excel 插入柱状图对比 "工作日 vs 周末客流"，发现周末客流集中在环岛路沿线（占比 42%），工作日集中在通勤干线；<br>
+              - 制作 "早晚高峰客流热力图"，标注嘉禾路、湖滨南路等拥堵路段的满载率超 80%；<br>
+              - 用折线图展示 "8 月客流趋势"，圈注 3 次降雨日的客流低谷（较平日下降 12%-18%）。<br><br>
+              3. <strong>月报编撰</strong>：<br>
+              - 按 "总览 - 线路特征 - 异动分析" 结构撰写，对异常数据附说明（如 "15 日景区专线客流激增：受天气转晴影响，建议后续关注气象预警调整运力"）；<br>
+              - 提炼 3 条核心结论：干线高峰压力大、支线客流不饱和、天气对客流影响显著，为线路调整提供方向。
+            </td>
+          </tr>
+          <tr style="background-color:#f8fafc;">
+            <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">R（结果）</td>
+            <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+              1. 完成《厦门 8 月公交运营月报》，包含 12 张 Excel 可视化图表，清晰呈现 "干线拥堵、支线低效" 等核心特征及 3 处关键异动；<br>
+              2. 月报被运营部门采纳，作为 9 月调整依据（如在嘉禾路高峰加车 2 班次 / 小时，优化 2 条低客流支线的发车频次）；<br>
+              3. 数据呈现方式获认可，成为后续月度报告的模板，提升了数据传递效率。
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>核心能力体现</h3>
+    <div class="card">
+      <ul style="line-height:1.8;padding-left:20px;">
+        <li><strong>Excel 工具应用</strong>：通过数据透视表、条件格式等功能高效处理海量数据，确保指标计算准确；</li>
+        <li><strong>可视化表达</strong>：用图表替代文字堆砌，让业务部门快速捕捉关键信息（如热力图直观展示拥堵点）；</li>
+        <li><strong>业务敏感度</strong>：主动标注异动数据并推测原因，使分析不止于 "呈现"，更贴近运营决策需求。</li>
+      </ul>
+    </div>
+    
+    <!-- 项目图片展示 -->
+    <h3>项目图片展示</h3>
+    <section class="project-gallery">
+      <div class="gallery-container">
+        <button class="gallery-btn left" onclick="moveGallery(-1, 'gallery1')">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#e6f0fa"/><path d="M15 6L9 12L15 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="gallery-track" id="gallery1">
+          <div class="gallery-item">
+            <img src="../项目1图-2.webp" alt="项目1图片2" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="gallery-item">
+            <img src="../项目1图-5.webp" alt="项目1图片5" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="gallery-item">
+            <img src="../项目1图-6.webp" alt="项目1图片6" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+          <div class="gallery-item">
+            <img src="../项目1图-7.webp" alt="项目1图片7" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+          </div>
+        </div>
+        <button class="gallery-btn right" onclick="moveGallery(1, 'gallery1')">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#e6f0fa"/><path d="M9 6L15 12L9 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    © 2025 王泽榕的个人网站.
+  </footer>
+  
+  <script src="../image-loader.js"></script>
+  <script>
+    // 图片轮播功能
+    let galleryIndexes = { gallery1: 0 };
+    const galleryItemWidth = 400 + 16; // 图片宽度+间距
+    
+    function moveGallery(direction, galleryId) {
+      const track = document.getElementById(galleryId);
+      galleryIndexes[galleryId] += direction;
+      
+      const items = track.children.length;
+      if (galleryIndexes[galleryId] < 0) galleryIndexes[galleryId] = 0;
+      if (galleryIndexes[galleryId] > items - 1) galleryIndexes[galleryId] = items - 1;
+      
+      track.scrollTo({
+        left: galleryIndexes[galleryId] * galleryItemWidth,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
+
+

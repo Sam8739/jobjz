@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>竞赛获奖 - 王泽榕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo" style="text-decoration:none;">:) HI！</a>
+    <div class="navbar">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <a href="projects.html">项目经历</a>
+      <a href="awards.html" class="active">竞赛获奖</a>
+      <a href="contact.html">联系方式</a>
+    </div>
+  </nav>
+  <main class="container">
+    <h1 class="text-center mt-4 mb-3">竞赛获奖</h1>
+    <!-- 需求调研类 -->
+    <h2 class="mb-2">需求调研类</h2>
+    <section class="awards-grid">
+      <div class="award-card">
+        <img class="card-img" src="./项目6.webp" alt="公交站台调研项目">
+        <div class="award-content">
+          <div class="mb-1">
+            <span class="tag">用户调研</span>
+            <span class="tag">空间优化</span>
+          </div>
+          <div class="bold mb-1">北京公交站台社会问题调查</div>
+          <div class="text-secondary">针对公交站台面临的空间利用失衡、流线冲突、设施不足等问题，通过用户调研和KANO模型分析，设计空间优化方案。</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <img class="card-img" src="./获奖2.webp" alt="需求调研类图片2">
+        <div class="award-content">
+          <div class="mb-1">
+            <span class="tag">田野调研</span>
+            <span class="tag">数据分析</span>
+          </div>
+          <div class="bold mb-1">全国大学生乡村调研大赛</div>
+          <div class="text-secondary">设计村民感知导向的韧性评价体系，提出分层提升策略，体系被民政部门采纳用于灾后重建。</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <img class="card-img" src="./项目2.webp" alt="养老服务调研项目">
+        <div class="award-content">
+          <div class="mb-1">
+            <span class="tag">养老服务</span>
+            <span class="tag">需求分析</span>
+          </div>
+          <div class="bold mb-1">北京市养老服务改革报告</div>
+          <div class="text-secondary">细分养老助餐需求模式，结合空间分布差异定位服务盲区与冗余区，针对性设计分类小区差异化运营策略。</div>
+        </div>
+      </div>
+    </section>
+    <!-- 数据分析类 -->
+    <h2 class="mb-2 mt-4">数据分析类</h2>
+    <section class="awards-grid">
+      <div class="award-card">
+        <img class="card-img" src="./决策支持模型.webp" alt="决策支持模型">
+        <div class="award-content">
+          <div class="mb-1">
+            <span class="tag">机器学习</span>
+            <span class="tag">决策模型</span>
+          </div>
+          <div class="bold mb-1">规划决策模型实战</div>
+          <div class="text-secondary">针对城市热岛问题，构建融合多源数据、机器学习与多目标优化的绿地空间格局决策模型，在有限用地条件下实现降温效益最大化。</div>
+        </div>
+      </div>
+    </section>
+    <!-- 运营策划类 -->
+    <h2 class="mb-2 mt-4">运营策划类</h2>
+    <section class="awards-grid">
+      <div class="award-card">
+        <img class="card-img" src="./获奖6.webp" alt="运营策划类图片1">
+        <div class="award-content">
+          <div class="mb-1">
+            <span class="tag">活动策划</span>
+            <span class="tag">运营方案</span>
+          </div>
+          <div class="bold mb-1">全国房地产策划大赛</div>
+          <div class="text-secondary">通过用户分层精准定位，以 “民族文化” 为差异化标签，策划全周期营销活动与线上线下渠道整合。</div>
+        </div>
+      </div>
+    </section>
+    <!-- 新媒体内容类 -->
+    <h2 class="mb-2 mt-4">内容运营类</h2>
+    <section class="awards-grid">
+      <div class="award-card">
+        <img class="card-img" src="./文创产品.webp" alt="文创产品">
+        <div class="award-content">
+          <div class="mb-1">
+            <span class="tag">平面设计</span>
+            <span class="tag">文创产品</span>
+          </div>
+          <div class="bold mb-1">文创：大学生设计类竞赛</div>
+          <div class="text-secondary">基于鲁迅博物馆文创产品，设计文创产品包装。</div>
+        </div>
+      </div>
+      <div class="award-card">
+        <img class="card-img" src="./闽南人文.webp" alt="闽南人文">
+        <div class="award-content">
+          <div class="mb-1">
+            <span class="tag">拍摄剪辑</span>
+            <span class="tag">新媒体产品</span>
+          </div>
+          <div class="bold mb-1">视频：闽南人文微电影</div>
+          <div class="text-secondary">暑期社会实践项目，通过微电影形式切入闽南文化。</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    © 2025 王泽榕的个人网站.
+  </footer>
+  <style>
+  /* 竞赛获奖页面专用样式调整 */
+  .award-card .tag {
+    font-size: 1.2rem; /* 标签缩小到原来的0.8倍 (1.5 * 0.8 = 1.2) */
+  }
+  .award-card .bold {
+    font-size: 1.6rem; /* 标题字扩大到原来的1.3倍 (1.5 * 1.3 = 1.95) */
+  }
+  
+  .modal-bg {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-bg.active { display: flex; }
+  .modal-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+    max-width: 700px;
+    width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    padding: 36px 32px 24px 32px;
+    position: relative;
+    animation: modalIn 0.25s cubic-bezier(.4,0,.2,1);
+  }
+  .modal-card::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  .modal-card::-webkit-scrollbar-thumb {
+    background: #e6f0fa;
+    border-radius: 8px;
+  }
+  @keyframes modalIn { from { opacity:0; transform:translateY(40px);} to {opacity:1; transform:translateY(0);} }
+  .modal-close {
+    position: absolute; right: 18px; top: 18px;
+    background: #e6f0fa; color: #007aff; border: none;
+    border-radius: 50%; width: 36px; height: 36px;
+    font-size: 1.5rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+  }
+  .modal-close:hover { background: #007aff; color: #fff; }
+</style>
+<!-- 浮层弹窗们 -->
+<div class="modal-bg" id="modal-bg-0">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal(0)">×</button>
+    <h2>北京西四片区公交站台社会问题调查及优化项目</h2>
+    <h3>STAR 法则拆解</h3>
+    <h4>S（情境）</h4>
+    <p>北京市西四片区公交站台面临双重核心矛盾：一方面，随着地铁、共享单车等出行方式兴起，公交客流量下降但站台仍承担重要接驳功能，老年人口占比超20%（中度老龄化），对适老设施需求突出；另一方面，站台存在空间利用失衡（前端拥挤后端闲置）、流线冲突（上下车/共享单车/出租车交织）、设施不足（座椅少、标识模糊）等问题，导致候车效率低、用户体验差，亟需系统性优化。</p>
+    <h4>T（任务）</h4>
+    <p>作为核心负责人，承担三大任务：</p>
+    <ul>
+      <li>深度挖掘用户需求，明确不同人群（学生、老人、上班族、游客）的痛点差异（如老人对座椅需求、年轻人对智能提示需求）；</li>
+      <li>基于需求优先级排序，设计"效率+人性化"平衡的优化方案，涵盖空间布局、设施配置、指引系统；</li>
+      <li>输出可落地的《公交站台设计导则》，推动管控措施落地（如错峰调度、分区管理）。</li>
+    </ul>
+    <h4>A（行动）</h4>
+    <ul>
+      <li><strong>全维度需求调研：</strong>
+        <ul>
+          <li>实地观察法：连续2周跟踪早晚高峰及非高峰时段，记录人群分布（前端拥挤率超70%）、流线冲突点（共享单车占用站台空间占比30%）、设施缺陷（60%站台座椅不足3个）；</li>
+          <li>用户访谈：覆盖4类核心人群（学生、老人、上班族、游客），发现老人最关注"座椅数量""停车时长"，年轻人最在意"智能到站提示""手机充电"；</li>
+          <li>量化分析：通过85份有效问卷+KANO模型，确定设施优先级——基本需求（座椅、防护栏杆、智能播报，满意度权重＞70%）、期望需求（倚靠栏杆、可视化屏幕，权重50%-70%）、兴奋需求（自动贩卖机、充电桩，权重＜30%）；</li>
+        </ul>
+      </li>
+      <li><strong>针对性方案设计：</strong>
+        <ul>
+          <li>空间优化：提出"动静分区"策略，将站台划分为"候车区"（近车门，满足快速上下）和"休憩区"（远车门，配置多座椅，服务老人/游客），解决人流交织；</li>
+          <li>设施升级：优先补充基本需求（每站台增配5-8个座椅、加装防护栏杆），试点期望需求（智能播报系统、车辆位置屏幕），预留兴奋需求接口（自动贩卖机安装位）；</li>
+          <li>指引系统：统一站牌字体（加粗至19号黑体）、增设地面标识（区分上下车区）、优化换乘指引（联动周边地铁/景点信息）；</li>
+        </ul>
+      </li>
+      <li><strong>落地保障：</strong>制定《公交站台设计导则》，明确"港湾式/直线式"站台选型标准（商圈用港湾式减少道路干扰）、错峰调度机制（高峰时段车辆间隔缩短至3分钟）、志愿者引导制度（早晚高峰维护秩序）。</li>
+    </ul>
+    <h4>R（结果）</h4>
+    <ul>
+      <li><strong>需求层面：</strong>明确了"老人重舒适、年轻人重效率"的差异需求，为后续精准优化提供依据；</li>
+      <li><strong>方案层面：</strong>输出的《设计导则》被纳入片区交通改造计划，通过动静分区策略有效改善站台空间利用效率；</li>
+      <li><strong>长效价值：</strong>形成"调研-排序-落地"闭环方法论，为同类老城区公交站台优化提供可复用模板。</li>
+    </ul>
+    <h4>关键数据 / 图表</h4>
+    <ul>
+      <li>老年人口占比超20%（中度老龄化），前端拥挤率超70%，共享单车占用站台空间占比30%；</li>
+      <li>85份有效问卷+KANO模型分析，4类核心人群需求调研，动静分区策略设计；</li>
+      <li>通过动静分区策略，有效改善站台空间利用效率，提升候车体验。</li>
+    </ul>
+  </div>
+</div>
+<div class="modal-bg" id="modal-bg-1">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal(1)">×</button>
+    <h2>城市热缓解导向下的绿地空间格局多目标优化模型项目</h2>
+    <h3>STAR 法则拆解</h3>
+    <h4>S（情境）</h4>
+    <p>城市热岛效应加剧，全国超 66% 人口居住在城市，地表热岛强度年增 0.021°C，高温引发健康风险。同时，城市绿地供给有限且布局粗放，现有优化模型存在单目标局限（难以平衡降温、成本、生态连通）、高分辨率优化瓶颈（10 万 + 空间单元难以收敛）、解释性差（规划者无法理解降温机理）等问题，亟需构建科学决策模型破解 "有限用地、最大降温" 难题。</p>
+    <h4>T（任务）</h4>
+    <p>作为核心开发者，承担三大任务：</p>
+    <ul>
+      <li>整合多源数据构建 "局部气候分区 - 地表温度" 数据库，支撑绿地降温机理分析；</li>
+      <li>设计融合机器学习的决策模型，包括启发式特征筛选、SHAP 可解释模型，识别影响降温的核心景观指标；</li>
+      <li>开发两步法 NSGA-II 多目标优化算法（局部 + 全局），输出平衡 "降温效益、成本控制、生态连通" 的绿地空间方案，并工具化落地。</li>
+    </ul>
+    <h4>A（行动）</h4>
+    <ul>
+      <li><strong>多源数据支撑与整合：</strong>
+        <ul>
+          <li>收集 100m 分辨率局部气候分区（LCZ）数据（含 17 类用地类型）、1000m 逐日地表温度（LST）数据，计算地表热岛强度（SUHII），构建时空数据库，覆盖城市绿地、建筑、水体等关键要素；</li>
+          <li>通过邻域一致性分析与自适应采样，筛选高质量样本（一致性得分 < 2.0），为模型训练提供可靠输入。</li>
+        </ul>
+      </li>
+      <li><strong>机器学习与特征工程：</strong>
+        <ul>
+          <li>用遗传算法（GA）从 75 个景观指标中筛选 27 个核心特征（如密集林地斑块面积占比 PLAND、边缘密度 ED），降低维度灾难影响；</li>
+          <li>构建随机森林（RF）预测模型，结合 SHAP 值解释降温机理（如密集林地 PLAND 突破 20% 后降温效应显著增强，稀疏林地形状指数 LSI≈2 时降温最优），使模型结果可被规划者理解。</li>
+        </ul>
+      </li>
+      <li><strong>多目标决策模型建模：</strong>
+        <ul>
+          <li>开发两步法 NSGA-II 算法：局部优化（1km 网格单元）平衡 "降温效益 - 用地成本"，全局优化整合局部解集，实现 "整体降温最大化、高温热点消除、成本控制、生态廊道连通" 四目标协同；</li>
+          <li>工具化落地：开发 Gradio 界面，支持数据上传、参数调整（如迭代次数、种群大小）、结果可视化（帕累托前沿、空间方案），提升模型易用性。</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>R（结果）</h4>
+    <ul>
+      <li><strong>模型性能：</strong>特征筛选后预测精度 R² 稳定在 0.73，较全量特征提升 5%，计算效率提升 60%（10 万 + 空间单元优化耗时从理论不可行降至 52 分钟）；</li>
+      <li><strong>实践应用：</strong>北京案例中生成 4 类优化方案（如综合最优方案平衡降温与成本），明确 "量先行、质加成" 规划策略（林地 PLAND 达 20%+ 提升连通性），为绿地布局提供可操作建议；</li>
+      <li><strong>工具价值：</strong>Gradio 界面实现 "数据输入 - 模型运算 - 结果输出" 一站式流程，支持规划者快速调用，推动模型从理论研究向实际规划转化。</li>
+    </ul>
+  </div>
+</div>
+<div class="modal-bg" id="modal-bg-2">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal(2)">×</button>
+    <h2>房地产项目运营策划</h2>
+    <h3>STAR 法则拆解</h3>
+    <h4>S（情境）</h4>
+    <p>昆明西山区房地产市场竞争激烈，2021年区域内商品房成交均价12537元/㎡，但同质化严重，多数项目因户型单一、配套同质化导致去化率不足30%。同时，目标客群（25-40岁家庭）对"全龄教育、社区文化、灵活户型"需求突出，而项目所在的21号片区为城中村改造区域，周边商业成熟但缺乏特色社区氛围，亟需通过差异化运营破局。</p>
+    <h4>T（任务）</h4>
+    <p>作为核心运营策划成员，承担三大任务：</p>
+    <ul>
+      <li>基于用户分层（刚需家庭/改善型家庭/投资客）设计差异化营销方案，明确"多元开放、和谐友好"的社区定位；</li>
+      <li>策划全周期营销活动（开盘造势→持续热销→尾盘清盘），结合线上线下渠道提升转化率；</li>
+      <li>创新社区文化运营（民族特色活动、社群建设），增强用户粘性，支撑溢价销售。</li>
+    </ul>
+    <h4>A（行动）</h4>
+    <ul>
+      <li><strong>用户洞察与定位落地：</strong>
+        <ul>
+          <li>通过1406份问卷+焦点小组访谈，锁定核心客群为"25-35岁首置家庭"（占比68%），其最关注"教育配套（72%）""户型灵活性（65%）"，据此设计"15年全龄教育+子母房（150㎡+50㎡）"核心卖点；</li>
+          <li>提炼"滇南民族文化"差异化标签，将剪纸合作社、扎染文创、民食节等融入社区运营，形成与竞品的核心差异。</li>
+        </ul>
+      </li>
+      <li><strong>全周期营销策略：</strong>
+        <ul>
+          <li><strong>开盘期（造势引流）：</strong>举办"万花筒音乐节"（融合民族乐与流行乐），吸引800+潜在客户到场，同步启动"老带新返物业费"机制，首周蓄客量突破500组；</li>
+          <li><strong>强销期（转化促单）：</strong>推出"VR全景看房+30天无理由退房"，搭配"低开高走"定价（首开均价19815元/㎡，每季度上浮3%），针对教育需求突出的客群，联动周边学校推出"购房送入学名额"套餐；</li>
+          <li><strong>续销期（粘性运营）：</strong>每月举办"民族文化周"（如剪纸工作坊、端午包粽大赛），建立业主社群，活跃度维持在60%以上，带动二次推荐成交占比达25%；</li>
+          <li><strong>尾盘期（清盘收尾）：</strong>通过"业主摄影大赛""植树认领"活动强化口碑，结合"一口价特惠房+车位捆绑销售"，加速去化剩余10%房源。</li>
+        </ul>
+      </li>
+      <li><strong>渠道与风险应对：</strong>
+        <ul>
+          <li><strong>线上：</strong>抖音直播（邀请网红带看样板间）+微信小程序（房贷计算器+预约看房），线上获客成本降低至200元/组；</li>
+          <li><strong>线下：</strong>在万达广场、爱琴海购物中心设置快闪店，通过"扫码领伴手礼（印有项目LOGO的民族风餐具）"引流；</li>
+          <li><strong>疫情应对：</strong>紧急上线"线上售楼处"，推出"保价购房+无理由退房"，将疫情期间成交量损失控制在10%以内。</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>R（结果）</h4>
+    <ul>
+      <li><strong>销售业绩：</strong>项目首开去化率表现优异，远超区域平均水平，整体去化周期显著缩短；</li>
+      <li><strong>品牌影响：</strong>"民族文化社区"定位成为区域标杆，业主满意度较高，商业街区运营良好；</li>
+      <li><strong>运营创新：</strong>社群运营模式获得良好反响，老带新成交占比稳定，低成本营销模式被纳入企业案例库。</li>
+    </ul>
+    <h4>核心能力体现</h4>
+    <ul>
+      <li><strong>用户分层运营：</strong>通过精准画像设计产品与活动，实现"刚需抢售、改善溢价"的差异化成果；</li>
+      <li><strong>全渠道整合：</strong>线上线下联动+应急策略，确保营销链路闭环；</li>
+      <li><strong>文化IP打造：</strong>将民族元素转化为运营抓手，形成可持续的用户粘性与品牌记忆点。</li>
+    </ul>
+  </div>
+</div>
+<div class="modal-bg" id="modal-bg-3">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal(3)">×</button>
+    <h2>北京市养老服务改革报告：居家养老服务供给模式改革研究</h2>
+    <h3>STAR法则项目复盘</h3>
+    <h4>S（情境）</h4>
+    <p>北京市老龄化加剧，60岁以上老年人口占比22.6%，90%以上老年人选择居家养老，但存在服务效率低下、机构运营亏损（60%养老驿站亏损）、政府投入产出比低等问题，助餐等基础服务供需错配突出。</p>
+    <h4>T（任务）</h4>
+    <p>作为核心成员，负责：</p>
+    <ul>
+      <li>牵头需求调研，明确不同老年群体（如独居、失能、高知老人）的服务痛点；</li>
+      <li>设计供给效率评估模型，量化助餐服务等场景的成本与覆盖关系；</li>
+      <li>输出可落地的服务模式优化方案及政策建议。</li>
+    </ul>
+    <h4>A（行动）</h4>
+    <ul>
+      <li><strong>需求侧深挖：</strong>通过问卷（81份有效样本）、社区访谈（覆盖4个典型社区），提炼出"数字活跃型""半失能型"等8类用户画像，明确独居老人对餐品质量敏感、非独居老人更关注补贴的差异需求；</li>
+      <li><strong>供给侧分析：</strong>整合民政数据与实地调研，绘制助餐点空间分布图，发现核心区需求密度达346份/km²但配送成本高，郊区存在服务盲区；</li>
+      <li><strong>模式设计：</strong>基于用户分层设计"政府+平台+商户"混合模式（如G→P→B→C），引入积分体系激励志愿者参与配送，优化补贴机制（区分独居/非独居补贴标准）；</li>
+      <li><strong>落地推动：</strong>协调街道试点"银龄数字学堂"，培训300+老人使用智能订餐系统，同步推动3家社区食堂接入平台。</li>
+    </ul>
+    <h4>R（结果）</h4>
+    <ul>
+      <li>形成10类人群画像及对应的服务包（如"健康轻食助餐包""智能便捷助餐包"），试点社区服务覆盖率显著提升；</li>
+      <li>提出的"双轨服务通道"（保留传统服务+数字化支持）被纳入北京市养老政策，有效减少数字障碍老人服务缺口；</li>
+      <li>助餐点运营成本得到优化，试点区域老年人满意度明显提升。</li>
+    </ul>
+    <h4>关键数据 / 图表</h4>
+    <ul>
+      <li>60岁以上老年人口占比22.6%，90%以上选择居家养老，60%养老驿站亏损；</li>
+      <li>81份有效问卷+4个社区访谈，8类用户画像，核心区需求密度346份/km²；</li>
+      <li>试点社区服务覆盖率显著提升，老年人满意度明显改善。</li>
+    </ul>
+  </div>
+</div>
+<div class="modal-bg" id="modal-bg-4">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal(4)">×</button>
+    <h2>乡村韧性评价与提升策略研究</h2>
+    <h3>STAR法则项目复盘</h3>
+    <h4>S（情境）</h4>
+    <p>北京妙峰山镇在"23・7"特大暴雨中17个村全受灾，暴露出灾后重建中"村民感知缺失""韧性评价体系不落地"等问题。现有评估多依赖专家打分，忽视村民实际需求，导致政策执行与民生需求脱节。</p>
+    <h4>T（任务）</h4>
+    <ul>
+      <li>设计"村民感知导向"的韧性评价体系，填补现有模型的用户视角空白；</li>
+      <li>输出分层提升策略，确保可操作性；</li>
+      <li>推动试点验证，形成可复制的乡村抗灾解决方案。</li>
+    </ul>
+    <h4>A（行动）</h4>
+    <ul>
+      <li>需求建模与指标设计：问卷+访谈提炼"感知力-应对力-恢复力"三维指标体系，"恢复力"权重最高，印证村民对基础设施的核心需求；</li>
+      <li>策略设计与分层落地：村委会层面设计"预警系统+物资库"，家庭层面开发"应急技能培训包"，并制作逃生路线手册；</li>
+      <li>试点与迭代：在涧沟村、担礼村试点"心理抚慰站"和"应急演练常态化"，收集反馈优化指标权重。</li>
+    </ul>
+    <h4>R（结果）</h4>
+    <ul>
+      <li>评价体系被民政部门采纳，用于灾后重建优先级排序，有效提升公共服务设施恢复效率；</li>
+      <li>家庭应急包覆盖范围扩大，村民自救能力得到显著提升；</li>
+      <li>形成"村民参与+数据驱动"的韧性建设模式，为京津冀近郊乡村抗灾提供范本。</li>
+    </ul>
+  </div>
+</div>
+<script>
+function openModal(idx) {
+  document.getElementById('modal-bg-' + idx).classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(idx) {
+  document.getElementById('modal-bg-' + idx).classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var cards = document.querySelectorAll('.award-card');
+  // 0: 公交站台调研（需求调研类1）
+  cards[0].addEventListener('click', function(){openModal(0)});
+  // 1: 乡村韧性（需求调研类2）
+  cards[1].addEventListener('click', function(){openModal(4)});
+  // 2: 养老服务改革（需求调研类3）
+  cards[2].addEventListener('click', function(){openModal(3)});
+  // 3: 城市热缓解（数据分析类1）
+  cards[3].addEventListener('click', function(){openModal(1)});
+  // 4: 房地产策划大赛（运营策划类1）
+  cards[4].addEventListener('click', function(){openModal(2)});
+
+  // 新增：点击modal-bg关闭浮层，点击modal-card阻止冒泡
+  var modals = document.querySelectorAll('.modal-bg');
+  modals.forEach(function(bg, idx){
+    bg.addEventListener('click', function(){ closeModal(idx); });
+    var card = bg.querySelector('.modal-card');
+    if(card) card.addEventListener('click', function(e){ e.stopPropagation(); });
+  });
+});
+</script>
+</body>
+</html> 

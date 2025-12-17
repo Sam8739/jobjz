@@ -1,0 +1,1108 @@
+/* 基础变量 */
+:root {
+  --main-bg: #f9fafb;
+  --main-color: #007aff;
+  --main-color-light: #e6f0fa;
+  --text-color: #222;
+  --text-secondary: #4b5563;
+  --text-light: #6b7280;
+  --border-radius: 16px;
+  --card-radius: 16px;
+  --nav-height: 64px;
+  --shadow: 0 2px 16px 0 rgba(0,0,0,0.06);
+  --font-main: 'Roboto', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+  --transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  min-height: 100vh;
+}
+
+/* 顶部导航栏 */
+nav {
+  width: 100%;
+  height: var(--nav-height);
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0 100px 0 20px;
+}
+
+.navbar {
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navbar a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  background: none;
+}
+
+.navbar .logo {
+  font-size: 1.2rem;
+  color: var(--main-color);
+  font-weight: bold;
+  margin-right: 32px;
+  letter-spacing: 1px;
+}
+
+/* 容器与卡片 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 64px 16px;
+}
+.card {
+  background: #fff;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  padding: 32px 32px 32px 32px;
+  margin-bottom: 32px;
+  transition: var(--transition);
+}
+.card:last-child { margin-bottom: 0; }
+
+/* 标题与副标题 */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  margin: 0 0 16px 0;
+  font-weight: bold;
+}
+h1 { font-size: 3.75rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.25rem; }
+
+.subtitle {
+  color: var(--text-light);
+  font-size: 1.65rem;
+  margin-bottom: 24px;
+}
+
+/* 进度条 */
+.progress-bar {
+  background: #e5e7eb;
+  border-radius: 8px;
+  height: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.progress-bar-inner {
+  background: var(--main-color);
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.5s;
+}
+
+/* 标签 */
+.tag {
+  display: inline-block;
+  background: var(--main-color-light);
+  color: var(--main-color);
+  font-size: 1.5rem;
+  border-radius: 8px;
+  padding: 2px 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+/* 图标按钮 */
+.icon-btn {
+  background: var(--main-color-light);
+  color: var(--main-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1.2rem;
+}
+.icon-btn:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+/* 卡片分栏布局 */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 圆形头像 */
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+  border: 4px solid #fff;
+}
+
+/* 卡片图片 */
+.card-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: var(--card-radius);
+  object-fit: cover;
+  margin-bottom: 16px;
+  loading: lazy;
+}
+
+/* 联系方式卡片 */
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 32px;
+  margin-bottom: 24px;
+  flex: 1 1 300px;
+  min-width: 220px;
+}
+  .contact-card .icon-btn {
+    font-size: 1.6rem;
+    min-width: 48px;
+    min-height: 48px;
+  }
+  .contact-card .icon-btn svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+.contact-card .copy-btn {
+  margin-left: auto;
+}
+
+/* 联系方式区域响应式 */
+.contact-section {
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+/* 工作经验卡片 */
+.exp-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 24px 32px;
+  margin-bottom: 24px;
+}
+.exp-card .exp-info {
+  flex: 1;
+}
+.exp-card .exp-time {
+  color: var(--text-light);
+  min-width: 120px;
+  text-align: right;
+  font-size: 1rem;
+}
+
+/* 页脚 */
+.footer {
+  width: 100%;
+  background: #111827;
+  color: #fff;
+  text-align: center;
+  padding: 32px 0 16px 0;
+  font-size: 0.95rem;
+  margin-top: 64px;
+}
+
+/* 响应式断点 */
+@media (max-width: 1100px) {
+  .container { max-width: 98vw; }
+  .flex-row { flex-direction: column; gap: 24px; }
+  .exp-card { flex-direction: column; gap: 12px; }
+  .contact-section { gap: 24px; }
+  .contact-card { flex: 1 1 auto; min-width: 200px; }
+  .hobby-cards-container { gap: 24px; }
+  .hobby-subcard { flex: 1 1 auto; min-width: 200px; }
+  .project-content { flex: 1 1 auto; min-width: 200px; }
+  .contact-main-section { gap: 24px; }
+  .contact-info-container { min-width: 200px; }
+  .hero-content, .hero-avatar, .traits-content, .radar-container { min-width: 200px; }
+  .about-content, .mbti-content, .mbti-image { min-width: 200px; }
+  .mbti-card, .danmaku-card { min-width: 300px; }
+}
+@media (max-width: 800px) {
+  nav { 
+    flex-direction: column; 
+    height: auto; 
+    padding: 0 8px; 
+  }
+  .navbar { gap: 12px; font-size: 1rem; }
+  .container { padding: 16px 2vw 32px 2vw; }
+  .card { padding: 16px 8px; }
+  .avatar { width: 100px; height: 100px; }
+  .card-img { max-width: 100%; }
+  .contact-card, .exp-card { flex-direction: column; gap: 8px; padding: 16px 8px; }
+  .contact-card .icon-btn svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  .contact-section { 
+    gap: 16px; 
+    flex-direction: column;
+  }
+  .contact-card { 
+    flex: 1 1 auto; 
+    min-width: 0; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .hobby-cards-container { gap: 16px; }
+  .hobby-subcard { flex: 1 1 auto; min-width: 0; height: auto; min-height: 200px; }
+  .project-card { flex-direction: column; gap: 12px; }
+  .project-content { flex: 1 1 auto; min-width: 0; }
+  .contact-main-section { flex-direction: column; gap: 16px; }
+  .contact-info-container { min-width: 0; max-width: none; }
+  .contact-image { max-width: 280px; }
+  .hero-content, .hero-avatar, .traits-content, .radar-container { min-width: 0; }
+  .about-content, .mbti-content, .mbti-image { min-width: 0; }
+  .mbti-card, .danmaku-card { min-width: 0; }
+  .mbti-card { flex-direction: column; gap: 12px; }
+}
+@media (max-width: 500px) {
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.2rem; }
+  .navbar { flex-wrap: wrap; }
+  .contact-section { 
+    gap: 12px; 
+    flex-direction: column;
+  }
+  .contact-card { 
+    padding: 12px 8px; 
+    gap: 12px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-card .icon-btn {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 1.4rem;
+  }
+  .contact-card .icon-btn svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  .hobby-cards-container { gap: 12px; }
+  .hobby-subcard { 
+    padding: 12px 8px; 
+    min-height: 180px;
+  }
+  .project-card { gap: 8px; }
+  .contact-main-section { gap: 12px; }
+  .contact-image { max-width: 240px; }
+  .radar-container { min-height: 240px; }
+  .carousel-card { 
+    flex: 0 0 80vw; 
+    max-width: 80vw; 
+    min-width: 180px; 
+  }
+}
+
+/* 渐变背景（首页顶部） */
+.hero-bg {
+  background: linear-gradient(135deg, #eff6ff 0%, #fff 100%);
+  border-radius: var(--card-radius);
+  padding: 48px 32px 32px 32px;
+  margin-bottom: 32px;
+}
+
+/* 雷达图容器 */
+.radar-chart {
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+.radar-label {
+  position: absolute;
+  background: none;
+  color: #2563eb;
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 9999;
+}
+.radar-label-top-left { left: -10px; top: 20px; }
+.radar-label-top-right { right: -10px; top: 20px; }
+.radar-label-bottom-left { left: -10px; bottom: 20px; }
+.radar-label-bottom-right { right: -10px; bottom: 20px; }
+.radar-label-bottom-center { left: 50%; bottom: -25px; transform: translateX(-50%); }
+
+/* 其他辅助样式 */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-secondary { 
+  color: var(--text-secondary); 
+  font-size: 1rem;
+}
+.text-light { color: var(--text-light); }
+.bold { font-weight: bold; }
+
+/* 项目卡片标题样式 */
+.card .bold {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.mt-3 { margin-top: 24px; }
+.mt-4 { margin-top: 32px; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 8px; }
+.mb-2 { margin-bottom: 16px; }
+.mb-3 { margin-bottom: 24px; }
+.mb-4 { margin-bottom: 32px; } 
+
+/* 竞赛获奖页面专用布局 */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.award-card {
+  display: flex;
+  background: #fff;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  padding: 24px 24px 24px 24px;
+  align-items: center;
+  max-width: 100%;
+  min-width: 0;
+  gap: 24px;
+}
+/* 优化奖项卡片图片比例为16:9，内容垂直居中 */
+.award-card .card-img {
+  width: 180px;
+  aspect-ratio: 16/9;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0;
+  background: #f3f4f6;
+}
+.award-card {
+  align-items: center;
+  min-height: 120px;
+}
+.award-content {
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 1100px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .award-card {
+    flex-direction: row;
+    padding: 16px 8px;
+    gap: 16px;
+  }
+  .award-card .card-img {
+    width: 140px;
+    aspect-ratio: 16/9;
+  }
+}
+@media (max-width: 700px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .award-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 4px;
+    gap: 8px;
+  }
+  .award-card .card-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    min-height: 80px;
+  }
+} 
+
+/* 首页个人评价三栏卡片（清新蓝色风格） */
+.traits-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.trait-card {
+  flex: 1;
+  background: #f4f8fd;
+  color: #222;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px 0 rgba(0,122,255,0.06);
+  padding: 20px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+.trait-card .trait-title {
+  font-size: 1.65rem;
+  font-weight: bold;
+  color: #007aff;
+  border-radius: 6px;
+  padding: 2px 12px;
+  margin-bottom: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0;
+}
+.trait-card .trait-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #60a5fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+}
+.trait-card .trait-desc {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+@media (max-width: 900px) {
+  .traits-row { flex-direction: column; gap: 12px; }
+  .trait-card { padding: 14px 10px; }
+  .radar-chart { height: 240px; }
+} 
+
+/* 首页工作经验区嵌套卡片样式 */
+.exp-main-card {
+  background: #f4f8fd;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px 0 rgba(0,122,255,0.06);
+  padding: 32px 32px 24px 32px;
+  margin-bottom: 32px;
+}
+.exp-main-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.exp-sub-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.exp-sub-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px 0 rgba(0,122,255,0.04);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+.exp-sub-company {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #007aff;
+  margin-bottom: 8px;
+}
+.exp-sub-company.meituan,
+.exp-sub-company.shouqi {
+  font-size: 1.5rem;
+}
+.exp-sub-meta {
+  font-size: 1.05rem;
+  color: #4b5563;
+  margin-bottom: 2px;
+}
+.exp-sub-role {
+  font-size: 1.05rem;
+  color: #60a5fa;
+  margin-bottom: 0;
+}
+@media (max-width: 900px) {
+  .exp-main-card { padding: 18px 8px 12px 8px; }
+  .exp-main-title { font-size: 1.2rem; }
+  .exp-sub-cards { 
+    gap: 12px; 
+    grid-template-columns: 1fr;
+  }
+  .exp-sub-card { padding: 12px 6px; }
+  .exp-sub-company { 
+    font-size: 1rem; 
+    text-align: center;
+    word-break: break-word;
+    line-height: 1.3;
+  }
+  .exp-sub-company.meituan,
+  .exp-sub-company.shouqi {
+    font-size: 1.3rem;
+  }
+  .exp-sub-meta, .exp-sub-role { 
+    font-size: 0.95rem; 
+    text-align: center;
+  }
+} 
+
+/* 关于我-职业规划时间轴 */
+.career-timeline {
+  position: relative;
+  padding-left: 40px;
+  margin: 32px 0 0 0;
+}
+.career-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #e6f0fa 0%, #60a5fa 100%);
+  border-radius: 2px;
+}
+.career-step {
+  position: relative;
+  margin-bottom: 36px;
+}
+.career-step:last-child { margin-bottom: 0; }
+.career-dot {
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 4px solid #3b82f6;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px 0 rgba(0,122,255,0.08);
+}
+.career-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8px;
+}
+.career-desc {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .career-timeline { padding-left: 18px; }
+  .career-dot { left: -18px; width: 12px; height: 12px; border-width: 3px; }
+  .career-title { font-size: 1rem; }
+  .career-desc { font-size: 0.95rem; }
+} 
+
+/* 精选项目轮播样式 - 优化对齐 */
+/* 让轮播区卡片高度与主内容区块一致 */
+.carousel-section {
+  margin: 40px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* 轮播按钮修复：始终可见且居中 */
+.carousel-container {
+  max-width: 100%;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-btn {
+  background: var(--main-color-light, #e6f0fa);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background 0.2s;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.carousel-btn.left { left: 0; }
+.carousel-btn.right { right: 0; }
+
+/* 精选项目卡片宽度1.5倍，纵向高度自适应且统一 */
+.carousel-track {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 240px;
+  align-items: stretch;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  justify-content: flex-start;
+}
+
+.carousel-card {
+  flex: 0 0 525px;
+  margin: 0 16px;
+  background: #fff;
+  border-radius: var(--card-radius, 16px);
+  box-shadow: var(--shadow, 0 2px 8px rgba(0,0,0,0.06));
+  text-align: left;
+  padding: 24px 24px 20px 24px;
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 240px;
+  height: auto;
+  max-width: 525px;
+  box-sizing: border-box;
+}
+.carousel-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.carousel-card .tags {
+  margin-top: 10px;
+}
+.carousel-card .tag {
+  display: inline-block;
+  background: #e6f0fa;
+  color: #2563eb;
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-size: 0.85em;
+  margin-right: 6px;
+}
+@media (max-width: 1500px) {
+  .carousel-track { max-width: 100vw; }
+  .carousel-card { flex: 0 0 90vw; max-width: 90vw; }
+}
+@media (max-width: 900px) {
+  .carousel-section { max-width: 100vw; }
+  .carousel-container { max-width: 100vw; }
+  .carousel-track { width: 100vw; max-width: 100vw; }
+  .carousel-card { flex: 0 0 85vw; min-width: 200px; margin: 0 8px; max-width: 85vw; height: auto; min-height: 180px; padding: 16px 8px; }
+  .carousel-btn.left { left: 0; }
+  .carousel-btn.right { right: 0; }
+}
+
+/* 弹幕样式 */
+.danmaku-container {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.danmaku-item {
+  position: absolute;
+  color: var(--color);
+  font-size: var(--size, 28px);
+  font-weight: 700;
+  white-space: nowrap;
+  animation: danmaku-move 15s linear infinite;
+  animation-delay: var(--delay);
+  opacity: 0;
+  transform: translateX(-100%);
+  top: calc(var(--track, 0) * 9% + 6%);
+}
+
+@keyframes danmaku-move {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(100vw + 100%));
+  }
+}
+
+@media (max-width: 900px) {
+  .danmaku-container {
+    height: 200px;
+    padding: 16px;
+  }
+  .danmaku-item {
+    font-size: var(--size, 18px);
+  }
+} 
+
+/* 兴趣爱好二级卡片背景色 */
+.card.hobby-subcard {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+} 
+
+.hero-desc-bg {
+} 
+
+/* Toast提示样式 */
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modal 样式 */
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-bg.active {
+  display: flex;
+}
+
+.modal-card {
+  background: #fff;
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.15);
+  padding: 36px 32px 24px 32px;
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.modal-card::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+.modal-card::-webkit-scrollbar-thumb {
+  background: #e6f0fa;
+  border-radius: 8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: var(--text-light);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.modal-close:hover {
+  background: var(--main-color-light);
+  color: var(--main-color);
+} 
+
+/* 项目图片展示样式 */
+.project-gallery {
+  margin: 32px 0;
+}
+
+.gallery-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0 8px;
+}
+
+.gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-item {
+  flex: 0 0 400px;
+  min-width: 400px;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.gallery-btn:hover {
+  background: rgba(230, 240, 250, 0.8);
+}
+
+.gallery-btn.left {
+  left: 8px;
+}
+
+.gallery-btn.right {
+  right: 8px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 0 0 300px;
+    min-width: 300px;
+  }
+  
+  .gallery-btn {
+    display: none;
+  }
+} 
+
+/* 兴趣爱好图标样式 */
+.hobby-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b82f6;
+  margin-bottom: 2px;
+}
+
+.hobby-icon svg {
+  width: 48px;
+  height: 48px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+}
+
+/* 响应式调整 */
+@media (max-width: 800px) {
+  .hobby-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hobby-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+} 
+
+/* 兴趣爱好卡片容器 */
+.hobby-cards-container {
+  gap: 20px;
+  align-items: stretch;
+}
+
+.hobby-subcard {
+  flex: 1;
+  min-width: 100px;
+  height: 220px;
+  padding: 16px 12px;
+}
+
+/* 项目卡片样式 */
+.project-card {
+  align-items: center;
+}
+
+.project-content {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* 联系方式页面样式 */
+.contact-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-image {
+  max-width: 320px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-right: 0;
+}
+
+.contact-info-container {
+  min-width: 320px;
+  max-width: 420px;
+  margin-left: 0;
+} 
+
+/* 首页样式 */
+.hero-content {
+  flex: 2;
+  min-width: 220px;
+}
+
+.hero-avatar {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.traits-content {
+  flex: 2;
+  min-width: 220px;
+}
+
+.radar-container {
+  flex: 1;
+  min-width: 280px;
+  min-height: 280px;
+  position: relative;
+}
+
+/* 关于我页面样式 */
+.about-content {
+  flex: 1;
+  min-width: 220px;
+}
+
+.mbti-card {
+  flex: 1;
+  align-items: center;
+  min-width: 340px;
+  height: 100%;
+}
+
+.mbti-content {
+  flex: 2;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mbti-image {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.danmaku-card {
+  flex: 1.2;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+} 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于需求模式分异的养老助餐设施供需匹配策略项目 - 王泽榕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo" style="text-decoration:none;">:) HI！</a>
+        <div class="navbar">
+          <a href="index.html">首页</a>
+          <a href="about.html">关于我</a>
+          <a href="projects.html">项目经历</a>
+          <a href="awards.html">竞赛获奖</a>
+          <a href="contact.html">联系方式</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>基于需求模式分异的养老助餐设施供需匹配策略项目</h1>
+        <img src="../项目2.webp" alt="项目2首图" style="width:100%;aspect-ratio:21/4.5;object-fit:cover;margin-bottom:24px;">
+        <h2>STAR 法则拆解</h2>
+        
+        <div class="card">
+          <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
+            <thead>
+              <tr style="background-color:#f8fafc;border-bottom:2px solid #e2e8f0;">
+                <th style="padding:16px;text-align:left;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;">维度</th>
+                <th style="padding:16px;text-align:left;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;">具体内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;width:120px;">S（情境）</td>
+                <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+                  北京市西城区展览路街道 60 岁及以上老年人口占比达 29.9%，养老助餐是居家老人的核心需求，但存在显著供需错配：一方面，25 个助餐点中部分设施因 "服务半径过大、菜品不适配" 导致 "建而不用"；另一方面，街道北部（如德宝社区）存在堂食服务盲区，外送服务覆盖不均，高龄、独居老人 "吃饭难" 问题突出。传统规划仅关注设施数量，未考虑老年人就餐行为差异（如居家烹饪、堂食、外送的偏好分异），导致资源配置效率低下。
+                </td>
+              </tr>
+              <tr style="background-color:#f8fafc;">
+                <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">T（任务）</td>
+                <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+                  作为策略核心成员，承担三大任务：<br>
+                  1. 基于老年人助餐行为特征，细分需求模式并量化空间分布差异；<br>
+                  2. 评估现有堂食与外送服务的可达性瓶颈，定位 "服务盲区" 与 "资源冗余区"；<br>
+                  3. 制定差异化运营策略，推动助餐服务从 "数量覆盖" 转向 "精准匹配"，提升老年人满意度。
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">A（行动）</td>
+                <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+                  1. <strong>需求分异建模（用户分层）</strong>：<br>
+                  - 通过 229 份问卷聚类分析，提炼出 "居家就餐型（64.93%）""在外堂食型（17.91%）""外送就餐型（17.16%）" 三类需求模式，明确每类模式的核心特征（如居家型依赖家庭支持、堂食型注重社交需求、外送型分化为 "年轻忙碌族" 与 "高龄失能族"）；<br>
+                  - 结合小区类型（写字楼公寓 / 单位自建房等），绘制需求模式空间分布图，发现单位自建房中堂食需求占比超 20%，而写字楼公寓外送需求达 15-20%。<br><br>
+                  2. <strong>可达性评估（问题定位）</strong>：<br>
+                  - 改进高斯两步移动搜索模型，引入距离衰减函数（如 0-250 米接受度 35.4%）和服务频率权重，分别以 "设施面积""大众点评评论数" 作为堂食、外送服务的供给能力代理变量；<br>
+                  - 识别关键问题：堂食服务在南部核心区饱和（如南营房社区），但北部德宝社区存在盲区；外送服务在堂食薄弱区（如黄瓜园社区）形成补充，但西部朝阳庵社区覆盖不足。<br><br>
+                  3. <strong>差异化策略设计（运营落地）</strong>：<br>
+                  - 针对四类小区类型（双高型 / 堂高外低型 / 堂低外高型 / 双低型）制定策略：<br>
+                  - "双高型"（48.27%）：强化堂食与外送协同，推出 "时段套餐"（如午间堂食折扣 + 晚间外送优惠）；<br>
+                  - "堂高外低型"（48.96%）：联合外卖平台开通 "助餐绿色通道"，为单位自建房老人提供专属配送券；<br>
+                  - "双低型"（0.68%）：在小产权房片区增设微型助餐点，采用 "政府补贴 + 企业运营" 模式，优先覆盖高龄独居老人。
+                </td>
+              </tr>
+              <tr style="background-color:#f8fafc;">
+                <td style="padding:16px;font-weight:bold;color:#1e293b;border:1px solid #e2e8f0;vertical-align:top;">R（结果）</td>
+                <td style="padding:16px;border:1px solid #e2e8f0;line-height:1.6;">
+                  1. 策略层面：形成《展览路街道养老助餐服务优化指南》，明确四类小区的资源配置优先级，为街道节省无效投入约 15%；<br>
+                  2. 服务提升：北部堂食盲区通过 "移动餐车 + 固定点" 组合覆盖，服务可达性提升 40%；外送服务在西部片区的订单响应时效从 60 分钟缩短至 35 分钟；<br>
+                  3. 推广价值：该 "需求分异 - 精准施策" 框架被纳入北京市西城区养老服务专项规划，为其他老龄化街道提供可复用的策略模板，相关方法在同类研究中被引用作为微观尺度服务优化的典型案例。
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>核心能力体现</h3>
+        <div class="card">
+          <ul style="line-height:1.8;padding-left:20px;">
+            <li><strong>策略拆解</strong>：将 "助餐难" 问题拆解为 "需求分异→空间错配→资源浪费" 三层逻辑，避免一刀切方案；</li>
+            <li><strong>运营适配</strong>：针对不同小区类型设计 "设施补建 + 服务联动 + 政策激励" 组合策略，确保策略可落地、可量化；</li>
+            <li><strong>价值转化</strong>：通过数据驱动的需求洞察，将抽象的 "服务公平" 转化为具体的空间布局与运营动作，实现资源效率与用户体验的平衡。</li>
+          </ul>
+        </div>
+        
+        <!-- 项目图片展示 -->
+        <h3>项目图片展示</h3>
+        <section class="project-gallery">
+          <div class="gallery-container">
+            <button class="gallery-btn left" onclick="moveGallery(-1, 'gallery2')">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#e6f0fa"/><path d="M15 6L9 12L15 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="gallery-track" id="gallery2">
+              <div class="gallery-item">
+                <img src="../项目2图-1.webp" alt="项目2图片1" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+              </div>
+              <div class="gallery-item">
+                <img src="../项目2图-2.webp" alt="项目2图片2" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+              </div>
+              <div class="gallery-item">
+                <img src="../项目2图-3.webp" alt="项目2图片3" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+              </div>
+              <div class="gallery-item">
+                <img src="../项目2图-4.webp" alt="项目2图片4" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+              </div>
+              <div class="gallery-item">
+                <img src="../项目2图-5.webp" alt="项目2图片5" style="width:100%;height:300px;object-fit:cover;border-radius:8px;">
+              </div>
+            </div>
+            <button class="gallery-btn right" onclick="moveGallery(1, 'gallery2')">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#e6f0fa"/><path d="M9 6L15 12L9 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </section>
+    </main>
+    <footer class="footer">
+        © 2025 王泽榕的个人网站.
+    </footer>
+    
+    <script>
+      // 图片轮播功能
+      let galleryIndexes = { gallery2: 0 };
+      const galleryItemWidth = 400 + 16; // 图片宽度+间距
+      
+      function moveGallery(direction, galleryId) {
+        const track = document.getElementById(galleryId);
+        galleryIndexes[galleryId] += direction;
+        
+        const items = track.children.length;
+        if (galleryIndexes[galleryId] < 0) galleryIndexes[galleryId] = 0;
+        if (galleryIndexes[galleryId] > items - 1) galleryIndexes[galleryId] = items - 1;
+        
+        track.scrollTo({
+          left: galleryIndexes[galleryId] * galleryItemWidth,
+          behavior: 'smooth'
+        });
+      }
+    </script>
+</body>
+</html>
+
+

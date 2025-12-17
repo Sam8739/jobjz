@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王泽榕 - 个人简介</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ECharts for 雷达图 -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo" style="text-decoration:none;">:) HI！</a>
+    <div class="navbar">
+      <a href="index.html" class="active">首页</a>
+      <a href="about.html">关于我</a>
+      <a href="projects.html">项目经历</a>
+      <a href="awards.html">竞赛获奖</a>
+      <a href="contact.html">联系方式</a>
+    </div>
+  </nav>
+  <main class="container">
+    <!-- 顶部个人信息区 -->
+    <section class="hero-bg flex-row" style="align-items:center;">
+      <div class="hero-content">
+        <h1 class="mt-0 mb-1">王泽榕</h1>
+        <div class="mb-2" style="font-size:1.2rem;color:#6b7280;">
+          热爱互联网行业，对产品打磨和用户行为分析充满好奇，爱扩展爱学习。期待收获一段高质量、有深度的互联网实习经历，给孩子踏入互联网行业一个好的开始。
+        </div>
+        <div class="mb-2">
+          <span class="tag">base西直门</span>
+          <span class="tag">到岗快</span>
+          <span class="tag">中长期实习</span>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <img class="avatar" src="./头像1.webp" alt="头像" style="width:220px;height:220px;" loading="lazy">
+      </div>
+    </section>
+    <!-- 个人评价区 -->
+    <h2 class="text-center mt-4 mb-3">个人评价</h2>
+    <section class="card flex-row" style="align-items:center;">
+      <div class="traits-content">
+        <div class="traits-row">
+          <div class="trait-card">
+            <div style="display:flex;align-items:center;gap:5px;margin-bottom:8px;">
+              <span class="trait-icon" aria-label="用户洞察">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="15" cy="15" r="8" stroke="#60a5fa" stroke-width="2" fill="#e6f0fa"/><rect x="22.2" y="22.2" width="7" height="2.5" rx="1.25" transform="rotate(45 22.2 22.2)" fill="#60a5fa"/></svg>
+              </span>
+              <span class="trait-title">用户洞察</span>
+            </div>
+            <div class="trait-desc">构建多群体用户行为画像，培养从调研到需求提炼的用户洞察能力。</div>
+          </div>
+          <div class="trait-card">
+            <div style="display:flex;align-items:center;gap:5px;margin-bottom:8px;">
+              <span class="trait-icon" aria-label="数据驱动">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="7" y="18" width="4" height="7" rx="2" fill="#60a5fa"/><rect x="14" y="12" width="4" height="13" rx="2" fill="#60a5fa"/><rect x="21" y="8" width="4" height="17" rx="2" fill="#60a5fa"/></svg>
+              </span>
+              <span class="trait-title">数据驱动</span>
+            </div>
+            <div class="trait-desc">用SQL、vlookup等工具及函数，用数据发现问题，验证策略。</div>
+          </div>
+          <div class="trait-card">
+            <div style="display:flex;align-items:center;gap:5px;margin-bottom:8px;">
+              <span class="trait-icon" aria-label="结果导向">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="#60a5fa" stroke-width="2" fill="#e6f0fa"/><circle cx="16" cy="16" r="5" fill="#60a5fa"/><path d="M16 7v6m0 6v6m-9-9h6m6 0h6" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <span class="trait-title">结果导向</span>
+            </div>
+            <div class="trait-desc">经验丰富，展现"洞察-设计-执行-优化"的完整闭环能力。</div>
+          </div>
+        </div>
+      </div>
+      <div class="radar-container">
+        <div id="radar" class="radar-chart"></div>
+      </div>
+    </section>
+    <!-- 精选项目经历 -->
+    <h2 class="text-center mt-4 mb-3">精选项目</h2>
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <button class="carousel-btn left" onclick="moveCarousel(-1)">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#e6f0fa"/><path d="M20 8L12 16L20 24" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="carousel-track">
+          <!-- 项目卡片1: 用户调研精选项目 (对应公交站台社会问题调查) -->
+          <a class="carousel-card" href="project6.html">
+            <img src="./项目6.webp" alt="用户调研精选项目">
+            <h3>用户调研精选项目</h3>
+            <p>针对公交站台面临的空间利用失衡、流线冲突、设施不足等问题，通过用户调研和KANO模型分析，设计空间优化方案。</p>
+            <div class="tags">
+              <span class="tag">用户调研</span>
+              <span class="tag">空间优化</span>
+            </div>
+          </a>
+          <!-- 项目卡片2: 数据分析精选项目 (对应公交月报) -->
+          <a class="carousel-card" href="project1.html">
+            <img src="./项目1.webp" alt="数据分析精选项目">
+            <h3>数据分析精选项目：运营分析</h3>
+            <p>处理厦门市公交运营数据，制作可视化图表并编撰月报，呈现运营特征与异动，为线路调整提供数据支撑。</p>
+            <div class="tags">
+              <span class="tag">数据分析</span>
+              <span class="tag">交通</span>
+              <span class="tag">可视化</span>
+            </div>
+          </a>
+          <!-- 项目卡片3: 策略解决精选项目 (对应养老服务改革报告) -->
+          <a class="carousel-card" href="project2.html">
+            <img src="./项目2.webp" alt="策略解决精选项目">
+            <h3>策略解决精选项目：供需匹配</h3>
+            <p>聚焦养老助餐供需错配问题，通过细分老年群体需求模式，结合空间可达性评估，制定差异化运营策略，实现助餐资源精准配置。</p>
+            <div class="tags">
+              <span class="tag">养老服务</span>
+              <span class="tag">民生改革</span>
+            </div>
+          </a>
+          <!-- 项目卡片4: 沟通能力展示 (对应班长经历) -->
+          <a class="carousel-card" href="project4.html">
+            <img src="./项目4.webp" alt="沟通能力展示">
+            <h3>沟通能力展示</h3>
+            <p>担任班长期间，成功组织班级班风展示与装扮活动，通过"虚拟形象风采墙"创新方案解决内向同学参与难题。</p>
+            <div class="tags">
+              <span class="tag">沟通能力</span>
+              <span class="tag">团队建设</span>
+            </div>
+          </a>
+          <!-- 项目卡片5: 机器学习决策模型 (对应城市热缓解项目) -->
+          <a class="carousel-card" href="project7.html">
+            <img src="./决策支持模型.webp" alt="机器学习决策模型">
+            <h3>数据分析高级应用：决策模型</h3>
+            <p>针对城市热岛问题，构建融合多源数据、机器学习与多目标优化的绿地空间格局决策模型。</p>
+            <div class="tags">
+              <span class="tag">机器学习</span>
+              <span class="tag">决策模型</span>
+              <span class="tag">可解释AI</span>
+            </div>
+          </a>
+        </div>
+        <button class="carousel-btn right" onclick="moveCarousel(1)">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#e6f0fa"/><path d="M12 8L20 16L12 24" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </section>
+    
+    <!-- 工作经验（重构） -->
+    <h2 class="text-center mt-4 mb-3">工作经验</h2>
+    <section class="exp-main-card">
+      <div class="exp-main-title">产品及运营实习</div>
+      <div class="exp-sub-cards">
+        <div class="exp-sub-card">
+          <div class="exp-sub-company">北京摩拜科技有限公司</div>
+          <div class="exp-sub-meta">2025.04-06</div>
+          <div class="exp-sub-role">C端产品运营</div>
+        </div>
+        <div class="exp-sub-card">
+          <div class="exp-sub-company">厦门飞博共创网络科技有限公司</div>
+          <div class="exp-sub-meta">2020.02~12</div>
+          <div class="exp-sub-role">内容运营</div>
+        </div>
+      </div>
+    </section>
+    <section class="exp-main-card">
+      <div class="exp-main-title">科研与数据分析实习</div>
+      <div class="exp-sub-cards">
+        <div class="exp-sub-card">
+          <div class="exp-sub-company">中国科学院地理资源与环境所</div>
+          <div class="exp-sub-meta">2024.08-11</div>
+          <div class="exp-sub-role">科研助理</div>
+        </div>
+        <div class="exp-sub-card">
+          <div class="exp-sub-company">华侨大学城市建设发展研究院</div>
+          <div class="exp-sub-meta">2020.08-12</div>
+          <div class="exp-sub-role">科研助理</div>
+        </div>
+      </div>
+    </section>
+    <section class="exp-main-card">
+      <div class="exp-main-title">专业实习</div>
+      <div class="exp-sub-cards">
+        <div class="exp-sub-card">
+          <div class="exp-sub-company">中国城市规划设计研究院厦门分院</div>
+          <div class="exp-sub-meta">2021.06-08</div>
+          <div class="exp-sub-role">规划实习生</div>
+        </div>
+        <div class="exp-sub-card">
+          <div class="exp-sub-company">建盟设计集团有限公司</div>
+          <div class="exp-sub-meta">2023.01~03</div>
+          <div class="exp-sub-role">规划实习生</div>
+        </div>
+      </div>
+    </section>
+    <!-- 联系方式 -->
+    <h2 class="text-center mt-4 mb-3">联系方式</h2>
+    <section class="flex-row contact-section">
+      <div class="card contact-card">
+        <button class="icon-btn" aria-label="电话" onclick="copyToClipboard('18559228739')"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3.09 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 22 16.92z"/></svg></button>
+        <div>
+          <div class="bold">电话</div>
+          <div class="text-secondary">18559228739</div>
+        </div>
+      </div>
+      <div class="card contact-card">
+        <button class="icon-btn" aria-label="邮箱" onclick="copyToClipboard('674432325@qq.com')"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6 12 13 2 6"/></svg></button>
+        <div>
+          <div class="bold">邮箱</div>
+          <div class="text-secondary">674432325@qq.com</div>
+        </div>
+      </div>
+      <div class="card contact-card">
+        <button class="icon-btn" aria-label="微信" onclick="copyToClipboard('Saminthemood')"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="10.5" r="1.5"/><circle cx="15.5" cy="10.5" r="1.5"/><path d="M12 17c-2.5 0-4.5-1.5-4.5-3.5h9c0 2-2 3.5-4.5 3.5z"/></svg></button>
+        <div>
+          <div class="bold">微信</div>
+          <div class="text-secondary">Saminthemood</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    © 2025 王泽榕的个人网站.
+  </footer>
+  <div id="toast" class="toast"></div>
+  <script>
+    // 雷达图数据
+    var radar = echarts.init(document.getElementById('radar'));
+    radar.setOption({
+      tooltip: {},
+      radar: {
+        indicator: [
+          { name: '沟通协作', max: 100 },
+          { name: '创新思维', max: 100 },
+          { name: '工具使用', max: 100 },
+          { name: '需求洞察', max: 100 },
+          { name: '进度管理', max: 100 },
+          { name: '逻辑能力', max: 100 }
+        ],
+        splitArea: { areaStyle: { color: ['#f9fafb', '#e6f0fa'] } },
+        axisLine: { lineStyle: { color: '#007aff' } },
+        splitLine: { lineStyle: { color: '#007aff' } },
+        name: { 
+          color: '#4b5563', 
+          fontSize: 18, 
+          width: 60, 
+          overflow: 'break',
+          padding: [0, 0, 0, 0]
+        },
+        nameGap: 15,
+        radius: '60%',
+        center: ['50%', '50%']
+      },
+      series: [{
+        type: 'radar',
+        data: [{
+          value: [92, 88, 90, 95, 85, 90],
+          name: '能力分布',
+          areaStyle: { color: 'rgba(0,122,255,0.2)' },
+          lineStyle: { color: '#007aff' },
+          symbol: 'circle',
+          symbolSize: 6,
+          itemStyle: { color: '#007aff' }
+        }]
+      }]
+    });
+    
+    // 窗口大小变化时重绘雷达图
+    window.addEventListener('resize', function() {
+      radar.resize();
+    });
+    // 精选项目轮播JS
+    let currentIndex = 0;
+    const cardCount = 5;
+    const cardWidth = 525 + 32; // 卡片宽度+间距
+    function moveCarousel(direction) {
+      const track = document.querySelector('.carousel-track');
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = 0;
+      if (currentIndex > cardCount - 1) currentIndex = cardCount - 1;
+      track.scrollTo({
+        left: currentIndex * cardWidth,
+        behavior: 'smooth'
+      });
+    }
+    // 自动轮播
+    let carouselTimer = null;
+    function autoCarousel() {
+      carouselTimer = setInterval(() => {
+        currentIndex = (currentIndex + 1) % cardCount;
+        const track = document.querySelector('.carousel-track');
+        track.scrollTo({
+          left: currentIndex * cardWidth,
+          behavior: 'smooth'
+        });
+      }, 3000);
+    }
+    // 悬停暂停，移开恢复
+    const carouselSection = document.querySelector('.carousel-section');
+    carouselSection.addEventListener('mouseenter', () => clearInterval(carouselTimer));
+    carouselSection.addEventListener('mouseleave', autoCarousel);
+    autoCarousel();
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(function() {
+        showToast('已复制到剪切板');
+      });
+    }
+    
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2000);
+    }
+  </script>
+</body>
+</html> 
